@@ -1,0 +1,13 @@
+src
+node_modules
+
+.env
+.DS_Store
+.vscode-test
+.vscode
+package-lock.json
+yarn.lock
+.history
+
+tsconfig.json
+tsup.config.ts

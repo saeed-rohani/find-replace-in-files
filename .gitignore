@@ -1,0 +1,17 @@
+node_modules
+index.js
+index.mjs
+index.d.ts
+index.d.mts
+.env
+.DS_Store
+.vscode-test
+.vscode
+.idea
+.nyc_output
+.lock-wscript
+package-lock.json
+yarn.lock
+.history
+logs
+*.log
