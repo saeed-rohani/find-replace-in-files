@@ -1,0 +1,54 @@
+{
+	"name": "find-replace-in-files",
+	"description": "Simple and lightweight package that finds the text in files in the directories and replaces it with new content.",
+	"version": "1.0.0",
+	"homepage": "https://github.com/saeed-rohani/find-replace-in-files",
+	"author": {
+		"name": "Saeed Rohani",
+		"url": "https://saeedrohani.com"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/saeed-rohani/find-replace-in-files.git"
+	},
+	"bugs": {
+		"url": "https://github.com/saeed-rohani/find-replace-in-files/issues"
+	},
+	"keywords": [
+		"find",
+		"search",
+		"match",
+		"matches",
+		"text",
+		"string",
+		"content",
+		"contents",
+		"replace",
+		"file",
+		"files"
+	],
+	"sideEffects": false,
+	"exports": {
+		"main": "./index.js",
+		"module": "./index.mjs",
+		"types": "./index.d.ts"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"scripts": {
+		"lint": "tsc",
+		"build": "tsup"
+	},
+	"files": [
+		"index.d.ts",
+		"index.js",
+		"index.mjs"
+	],
+	"devDependencies": {
+		"@types/node": "^22.6.1",
+		"tsup": "^8.3.0",
+		"typescript": "^5.6.2"
+	}
+}
