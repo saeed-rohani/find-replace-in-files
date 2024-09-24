@@ -29,11 +29,9 @@
 		"files"
 	],
 	"sideEffects": false,
-	"exports": {
-		"main": "./index.js",
-		"module": "./index.mjs",
-		"types": "./index.d.ts"
-	},
+	"main": "./index.js",
+	"module": "./index.mjs",
+	"types": "./index.d.ts",
 	"engines": {
 		"node": ">=18"
 	},
@@ -41,11 +39,6 @@
 		"lint": "tsc",
 		"build": "tsup"
 	},
-	"files": [
-		"index.d.ts",
-		"index.js",
-		"index.mjs"
-	],
 	"devDependencies": {
 		"@types/node": "^22.6.1",
 		"tsup": "^8.3.0",
