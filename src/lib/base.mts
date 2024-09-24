@@ -7,7 +7,7 @@ export default abstract class Base {
 		this.checkValidEntry(this._options);
 	}
 	private checkType<V, T>(key: string, value: V, type: T | T[]): void {
-		if (value === null || value === undefined) throw new Error(`${key} is null or undefined`);
+		if (value === undefined) throw new Error(`${key} is undefined`);
 		if (Array.isArray(type)) {
 			if (
 				!type.some((t) => {
@@ -46,7 +46,7 @@ export default abstract class Base {
 						throw new Error(`Entry of ${key} must be an array of string`);
 					break;
 				case "log":
-					this.checkType(key, value, "string");
+					this.checkType(key, value, ["string", "object"]);
 					break;
 				default:
 					throw new Error(`Entry ${key} is not valid`);
