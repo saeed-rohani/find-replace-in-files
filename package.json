@@ -1,7 +1,7 @@
 {
 	"name": "find-replace-in-files",
 	"description": "Simple and lightweight package that finds the text in files in the directories and replaces it with new content.",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"homepage": "https://github.com/saeed-rohani/find-replace-in-files",
 	"author": {
 		"name": "Saeed Rohani",
