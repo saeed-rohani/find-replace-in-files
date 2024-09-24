@@ -117,10 +117,11 @@ export default abstract class Base {
 			return;
 		} else {
 			const logMessage =
-				this._options.log ??
-				`${matchFound} match${matchFound > 1 ? "es" : ""} found in ${numberOfFiles} file${
-					numberOfFiles > 1 ? "s" : ""
-				} were replaced.`;
+				this._options.log === undefined
+					? `${matchFound} match${matchFound > 1 ? "es" : ""} found in ${numberOfFiles} file${
+							numberOfFiles > 1 ? "s" : ""
+					  } were replaced.`
+					: this._options.log;
 			logMessage && console.log(logMessage);
 		}
 	}
