@@ -39,7 +39,7 @@ console.log(result); // result returns an object with { matchFound, numberOfFile
 | files   |      `array`       | An array of strings used to locate specific files. It can be used to search for files by extension, filename, or part of a filename.                                                                                                                                                                                                            |  Optional   |
 | log     | `string` or `null` | By default, after completing the operation, the library generates a log indicating the number of matches and changed files with the list of array of file names modified. To customize this message, provide a string that will be logged upon successful completion of the replacement. To disable logging entirely, pass `null` as the value. |  Optional   |
 
-### Example with required and optional parameters
+### Example with required and optional arguments
 
 ```ts
 import { findReplaceInFiles } from "find-replace-in-files";
