@@ -88,11 +88,11 @@ export default abstract class Base {
 		for (const file of files) {
 			try {
 				const data = await fs.promises.readFile(file, "utf8");
-				const matched = data.match(options.find);
+				const matched = typeof options.find === "string" ? data.includes(options.find) : data.match(options.find);
 				if (matched) {
 					const replacedData = data.replace(options.find, options.replace);
 					await fs.promises.writeFile(file, replacedData, "utf8").then(() => {
-						matchFound += matched.length;
+						matchFound += Array.isArray(matched) ? matched.length : 1;
 						numberOfFiles++;
 						filesList.push(file);
 					});
